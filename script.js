@@ -13,7 +13,7 @@ var charSetSpecial = "!@#$%^&*()_+~`|}{[]\:;?><,./-="; // character set for spec
 
 
 
-// JS prompts to ask user for password criteria
+// JS prompts to ask user for password criteria. these should actually be inside the generatePassword function and not global vars.
 var includeLowercase = confirm("Do you want to include lowercase letters?"); // these vars use the confirm function to ask the user if they want to include the character set in their password. we are asking the user a yes or no question.
 var includeUppercase = confirm("Do you want to include uppercase letters?");
 var includeNumeric = confirm("Do you want to include numbers?");
@@ -29,11 +29,9 @@ function generatePassword() {
     alert("Password length must be between 8 and 128 characters");
     return; // this return is needed to stop the function from running if the user inputs a number less than 8 or greater than 128. That invalid input will not be used to generate the password.
     } // I now need to ass the confirm windows to ask the user for the characters to use
-    charSetLower;
-    charSetUpper;
-    charSetNumeric;
-    charSetSpecial;
-    
+    // lets make a new var as an empty box to call upon these global vars
+   
+
   }
 
 
