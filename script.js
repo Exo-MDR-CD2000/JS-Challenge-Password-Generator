@@ -41,6 +41,10 @@ function generatePassword() {
       alert("You must select at least one character set to use in your password"); // the alert is a shorthand for window.alert. the window is implied.
       return; // put the return here to stop the function from running if the user does not select at least one character set.
     }
+console.log(includeLowercase);
+console.log(includeUppercase);
+console.log(includeNumeric);
+console.log(includeSpecial);
    
 // now make a placeholder variable for characters to use in the password. this will be an empty string that will be filled with the characters the user selects to use in their password.
 
