@@ -115,7 +115,7 @@ generateBtn.addEventListener("click", writePassword);
 
 console.log (generatePassword);
 console.log (writePassword);
-
+console.log (password)
 
 
 
