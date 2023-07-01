@@ -1,6 +1,8 @@
 // Assignment Code
-var generateBtn = document.querySelector("#generate"); // this is the button that will generate the password. no need to change this.
 
+// lines 4-5 are the variables that are calling upon the html file to work. The querySelector is what is calling upon the html file to work. 
+var generateBtn = document.querySelector("#generate"); // this is the button that will generate the password. no need to change this.
+var passwordText = document.querySelector("#password");
 
 
 //character sets to be used in the password generator
@@ -18,10 +20,13 @@ var includeNumeric = confirm("Do you want to include numbers?");
 var includeSpecial = confirm("Do you want to include special characters?");
 
 
+
+
+
 // Write password to the #password input
 function writePassword() {
   var password = generatePassword();
-  var passwordText = document.querySelector("#password");
+  
 
   passwordText.value = password;
 
