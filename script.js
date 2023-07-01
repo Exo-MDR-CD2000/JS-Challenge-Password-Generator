@@ -21,6 +21,14 @@ var includeSpecial = confirm("Do you want to include special characters?");
 
 
 
+// below will be the function that generates the password. I then need to call upon this function in the writePassword function so that it will display the password in the text box.
+
+function generatePassword() {
+  var passwordLength = prompt("How many characters would you like to use for your pasword? (Use a number between 8 and 128)"); // this is the prompt that asks the user how many characters they want to use for their password. The user will input a number between 8 and 128. The number they input will be stored in the passwordLength variable.
+
+
+
+
 
 
 // Write password to the #password input
