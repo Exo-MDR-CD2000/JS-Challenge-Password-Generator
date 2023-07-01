@@ -76,7 +76,7 @@ if (includeLowercase) {
 
 
 
-//TODO: It seems as if the password is not being geneerated? put some console logs to check the issue.
+//TODO: It seems as if the password is not being geneerated? put some console logs to check the issue. I am literraly almost done except that there is something not working with the code. The password is not being displayed in the text box. I need to check the console logs to see what is going on.
 
 
 // Write password to the #password input
@@ -113,7 +113,8 @@ generateBtn.addEventListener("click", writePassword);
 
 
 
-
+console.log (generatePassword);
+console.log (writePassword);
 
 
 
