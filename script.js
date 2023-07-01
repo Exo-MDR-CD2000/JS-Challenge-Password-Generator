@@ -38,7 +38,7 @@ function generatePassword() {
 
     if (includeLowercase && includeUppercase && includeNumeric && includeSpecial) { // this seems a bit wrong. they way it is written now, if a user does not select any of the character sets, then the function will still carry on and generate a password.
       // I need to look at the logic again to make sure that the function will not run if the user does not select at least one character set.
-      alert("You must sleect at least one character set to use in your password");
+      alert("You must sleect at least one character set to use in your password"); // the alert is a shorthand for window.alert. the window is implied.
       return; // put the return here to stop the function from running if the user does not select at least one character set.
     }
    
@@ -60,6 +60,17 @@ if (includeLowercase) {
 } if (includeSpecial) {
   charPool += charSetSpecial;
 
+  }
+
+  // the charPool is now filled with characters that the user selects. now I need to generate the password using the characters in the charPool variable.
+  // I need to create a for loop that will loop through the charPool variable and randomly select characters from the charPool variable to generate the password.
+
+  var password = ""; // this is the placeholder variable that will be filled with the randomly selected characters from the charPool variable after JS loops through the charPool variable.
+
+  for (var i = 0; i < passwordLength; i++) { // the i < passwordLength is saying that the for loop will run as many times as the passwordLength variable. The passwordLength variable is the number of characters the user wants to use in their password. The for loop will run as many times as the user wants characters in their password.
+    var randomIndex = Math.floor(Math.random() * charPool.length); // this is where the random characters are selected from the charPool variable. The Math.random() function will select a random number between 0 and 1. The Math.floor() function will round the random number down to the nearest whole number. The Math.random() function will select a random number between 0 and the length of the charPool variable.
+    var randomChar = charPool(randomIndex); // this is where the random characters are selected from the charPool var.
+    randomChar =+ password; // this is where the random characters are added to the password variable.
   }
 }
 
