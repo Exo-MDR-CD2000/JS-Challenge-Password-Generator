@@ -9,6 +9,15 @@ var charSetUpper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"; // character set for uppercase 
 var charSetNumeric = "0123456789"; // character set for numbers
 var charSetSpecial = "!@#$%^&*()_+~`|}{[]\:;?><,./-="; // character set for special characters
 
+
+
+// JS prompts to ask user for password criteria
+var includeLowercase = confirm("Do you want to include lowercase letters?"); // these vars use the confirm function to ask the user if they want to include the character set in their password. we are asking the user a yes or no question.
+var includeUppercase = confirm("Do you want to include uppercase letters?");
+var includeNumeric = confirm("Do you want to include numbers?");
+var includeSpecial = confirm("Do you want to include special characters?");
+
+
 // Write password to the #password input
 function writePassword() {
   var password = generatePassword();
