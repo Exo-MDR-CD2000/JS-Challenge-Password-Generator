@@ -24,3 +24,7 @@ My thought process:
 5.) the second promnpt window will ask the user to use lowercase, uppercase, numeric, and/or special characters. The user can click ok or deny the use of said characters
 6.) the instructions say to make the user have both lowercase, uppercase, numeric, and/or special characters when the user makes a choice. Maybe type it to check if one or both has been selected and if not, ask the user again.
 7.) Once that is done, the generated password will display as an js alert or in the provided html element for where the password should be displayed. 
+
+
+
+I definately need to use some sort of math algorithm to determine the randomly generated password

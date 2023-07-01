@@ -1,6 +1,12 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
-var charSetNormal = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"; // regular character set that includes upper and lower case letters and numbers
+
+
+
+//character sets to be used in the password generator
+var charSetLower = "abcdefghijklmnopqrstuvwxyz"; // character set for lowercase letters
+var charSetUpper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"; // character set for uppercase letters
+var charSetNumeric = "0123456789"; // character set for numbers
 var charSetSpecial = "!@#$%^&*()_+~`|}{[]\:;?><,./-="; // character set for special characters
 
 // Write password to the #password input
