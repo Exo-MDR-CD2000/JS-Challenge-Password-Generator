@@ -38,7 +38,7 @@ function generatePassword() {
 
     if (includeLowercase && includeUppercase && includeNumeric && includeSpecial) { // this seems a bit wrong. they way it is written now, if a user does not select any of the character sets, then the function will still carry on and generate a password.
       // I need to look at the logic again to make sure that the function will not run if the user does not select at least one character set.
-      alert("You must sleect at least one character set to use in your password"); // the alert is a shorthand for window.alert. the window is implied.
+      alert("You must select at least one character set to use in your password"); // the alert is a shorthand for window.alert. the window is implied.
       return; // put the return here to stop the function from running if the user does not select at least one character set.
     }
    
