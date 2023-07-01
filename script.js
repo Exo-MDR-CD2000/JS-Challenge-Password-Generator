@@ -25,10 +25,15 @@ var includeSpecial = confirm("Do you want to include special characters?");
 
 function generatePassword() {
   var passwordLength = prompt("How many characters would you like to use for your password? (Use a number between 8 and 128)"); // this is the prompt that asks the user how many characters they want to use for their password. The user will input a number between 8 and 128. The number they input will be stored in the passwordLength variable.
-  { if passwordLength < 8 || passwordLength > 128 { // this says that if the passwordLength is less than 8 or greater than 128, then the user will get an alert that says "Password length must be between 8 and 128 characters" and then the function will stop running.
+    if passwordLength < 8 || passwordLength > 128 { // this says that if the passwordLength is less than 8 or greater than 128, then the user will get an alert that says "Password length must be between 8 and 128 characters" and then the function will stop running.
     alert("Password length must be between 8 and 128 characters");
     return; // this return is needed to stop the function from running if the user inputs a number less than 8 or greater than 128. That invalid input will not be used to generate the password.
-  }
+    } // I now need to ass the confirm windows to ask the user for the characters to use
+    charSetLower;
+    charSetUpper;
+    charSetNumeric;
+    charSetSpecial;
+    
   }
 
 
