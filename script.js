@@ -44,11 +44,13 @@ function generatePassword() {
    
 // now make a placeholder variable for characters to use in the password. this will be an empty string that will be filled with the characters the user selects to use in their password.
 
-var charSet = ""; // this is the placeholder variable that will be filled with the characters the user selects to use in their password.
+var charPool = ""; // this is the placeholder variable that will be filled with the characters the user selects to use in their password.
 
 // add logic to add the character sets to the charSet variable if the user selects them. this will be a series of if statements that will check to see if the user selected the character set. if they did, then add that character set to the charSet variable.
 
-
+if (includeLowercase) {
+  charPool 
+}
 
 
 
