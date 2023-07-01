@@ -49,12 +49,19 @@ var charPool = ""; // this is the placeholder variable that will be filled with 
 // add logic to add the character sets to the charSet variable if the user selects them. this will be a series of if statements that will check to see if the user selected the character set. if they did, then add that character set to the charSet variable.
 
 if (includeLowercase) {
-  charPool 
-}
+  charPool += charSetLower; // this is saying that if the user selects the lowercase character set, then add that character set to the charPool variable. If the user did not select the lowercase character set, then do not add it to the charPool variable.
 
+} if (includeUppercase) {
+  charPool += charSetUpper;
 
+} if (includeNumeric) {
+  charPool += charSetNumeric;
+
+} if (includeSpecial) {
+  charPool += charSetSpecial;
 
   }
+}
 
 
 
