@@ -34,9 +34,9 @@ function generatePassword() {
     var includeNumeric = confirm("Do you want to include numbers?");
     var includeSpecial = confirm("Do you want to include special characters?");
     
-    // now lets put a check in to make sure the user selects at least one character set
+    // now lets put a check in to make sure the user selects at least one character set. maybe check to see if all the variables are false. if they are all false, then alert the user that they need to select at least one character set.
 
-    
+    if (includeLowercase )
    
 
   }
