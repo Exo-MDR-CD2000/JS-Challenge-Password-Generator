@@ -69,14 +69,14 @@ if (includeLowercase) {
 
   for (var i = 0; i < passwordLength; i++) { // the i < passwordLength is saying that the for loop will run as many times as the passwordLength variable. The passwordLength variable is the number of characters the user wants to use in their password. The for loop will run as many times as the user wants characters in their password.
     var randomIndex = Math.floor(Math.random() * charPool.length); // this is where the random characters are selected from the charPool variable. The Math.random() function will select a random number between 0 and 1. The Math.floor() function will round the random number down to the nearest whole number. The Math.random() function will select a random number between 0 and the length of the charPool variable.
-    var randomChar = charPool(randomIndex); // this is where the random characters are selected from the charPool var.
+    var randomChar = charPool[randomIndex]; // this is where the random characters are selected from the charPool var.
     randomChar =+ password; // this is where the random characters are added to the password variable.
   }
 }
 
 
 
-
+//TODO: It seems as if the password is not being geneerated? put some console logs to check the issue.
 
 
 // Write password to the #password input
