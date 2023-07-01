@@ -14,10 +14,10 @@ var charSetSpecial = "!@#$%^&*()_+~`|}{[]\:;?><,./-="; // character set for spec
 
 
 // JS prompts to ask user for password criteria. these should actually be inside the generatePassword function and not global vars.
-var includeLowercase = confirm("Do you want to include lowercase letters?"); // these vars use the confirm function to ask the user if they want to include the character set in their password. we are asking the user a yes or no question.
-var includeUppercase = confirm("Do you want to include uppercase letters?");
-var includeNumeric = confirm("Do you want to include numbers?");
-var includeSpecial = confirm("Do you want to include special characters?");
+// var includeLowercase = confirm("Do you want to include lowercase letters?"); // these vars use the confirm function to ask the user if they want to include the character set in their password. we are asking the user a yes or no question.
+// var includeUppercase = confirm("Do you want to include uppercase letters?");
+// var includeNumeric = confirm("Do you want to include numbers?");
+// var includeSpecial = confirm("Do you want to include special characters?");
 
 
 
@@ -28,8 +28,15 @@ function generatePassword() {
     if passwordLength < 8 || passwordLength > 128 { // this says that if the passwordLength is less than 8 or greater than 128, then the user will get an alert that says "Password length must be between 8 and 128 characters" and then the function will stop running.
     alert("Password length must be between 8 and 128 characters");
     return; // this return is needed to stop the function from running if the user inputs a number less than 8 or greater than 128. That invalid input will not be used to generate the password.
-    } // I now need to ass the confirm windows to ask the user for the characters to use
-    // lets make a new var as an empty box to call upon these global vars
+    } // I now need to ask the confirm windows to ask the user for the characters to use
+    var includeLowercase = confirm("Do you want to include lowercase letters?"); // these vars use the confirm function to ask the user if they want to include the character set in their password. we are asking the user a yes or no question.
+    var includeUppercase = confirm("Do you want to include uppercase letters?");
+    var includeNumeric = confirm("Do you want to include numbers?");
+    var includeSpecial = confirm("Do you want to include special characters?");
+    
+    // now lets put a check in to make sure the user selects at least one character set
+
+    
    
 
   }
