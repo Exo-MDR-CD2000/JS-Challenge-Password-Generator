@@ -1,0 +1,26 @@
+GIVEN I need a new, secure password
+WHEN I click the button to generate a password
+THEN I am presented with a series of prompts for password criteria
+WHEN prompted for password criteria
+THEN I select which criteria to include in the password
+WHEN prompted for the length of the password
+THEN I choose a length of at least 8 characters and no more than 128 characters
+WHEN asked for character types to include in the password
+THEN I confirm whether or not to include lowercase, uppercase, numeric, and/or special characters
+WHEN I answer each prompt
+THEN my input should be validated and at least one character type should be selected
+WHEN all prompts are answered
+THEN a password is generated that matches the selected criteria
+WHEN the password is generated
+THEN the password is either displayed in an alert or written to the page
+
+
+My thought process:
+
+1.) when I click on the "generate password" button, there should be several pop up windows that the browser will provide.
+2.) I do not need to alter the HTML nor the CSS code to provide additional pop up boxes but instead, use javascript alerts, prompts, and confirms.
+3.) A js prompt should appear once the button is pressed. This prompt will ask the user to input the desired length of the password between 8-128 characters
+4.) The user will input character length amount, click ok, and then prompted by another prompt window. 
+5.) the second promnpt window will ask the user to use lowercase, uppercase, numeric, and/or special characters. The user can click ok or deny the use of said characters
+6.) the instructions say to make the user have both lowercase, uppercase, numeric, and/or special characters when the user makes a choice. Maybe type it to check if one or both has been selected and if not, ask the user again.
+7.) Once that is done, the generated password will display as an js alert or in the provided html element for where the password should be displayed. 
