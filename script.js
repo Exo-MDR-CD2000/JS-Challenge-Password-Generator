@@ -36,16 +36,12 @@ function generatePassword() {
     
     // now lets put a check in to make sure the user selects at least one character set. maybe check to see if all the variables are false. if they are all false, then alert the user that they need to select at least one character set.
 
-    if (includeLowercase && includeUppercase && includeNumeric && includeSpecial) { // this seems a bit wrong. they way it is written now, if a user does not select any of the character sets, then the function will still carry on and generate a password.
+    if (!includeLowercase && !includeUppercase && !includeNumeric && !includeSpecial) { // this seems a bit wrong. they way it is written now, if a user does not select any of the character sets, then the function will still carry on and generate a password.
       // I need to look at the logic again to make sure that the function will not run if the user does not select at least one character set.
       alert("You must select at least one character set to use in your password"); // the alert is a shorthand for window.alert. the window is implied.
       return; // put the return here to stop the function from running if the user does not select at least one character set.
     }
-console.log(includeLowercase);
-console.log(includeUppercase);
-console.log(includeNumeric);
-console.log(includeSpecial);
-   
+
 // now make a placeholder variable for characters to use in the password. this will be an empty string that will be filled with the characters the user selects to use in their password.
 
 var charPool = ""; // this is the placeholder variable that will be filled with the characters the user selects to use in their password.
@@ -114,10 +110,6 @@ generateBtn.addEventListener("click", writePassword);
 
 
 //the #generate is the id of the button in the html file. The querySelector is what is calling upon the button to work.
-
-
-
-
 
 
 
