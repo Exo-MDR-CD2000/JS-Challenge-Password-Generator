@@ -58,7 +58,7 @@ if (includeLowercase) {
   charPool += charSetNumeric;
 
 } if (includeSpecial) {
-  charPool += charSetSpecial;
+  charPool = charPool + charSetSpecial; // this is just to show the long way to write it. the shorthand is charPool += charSetSpecial; += is bascially saying x = x + y. 
 
   }
 
