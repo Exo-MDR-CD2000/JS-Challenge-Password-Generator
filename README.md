@@ -8,6 +8,8 @@ The task was to complete some pre-written javascript code to make a fully functi
 
 MDN docs was used as reference for JS help.
 
+This awesome JS [Cheat Sheet](https://htmlcheatsheet.com/js/)
+
 ## Screenshot
 
 ![alt password gen site](./assets/password-gen-site-small.png)
