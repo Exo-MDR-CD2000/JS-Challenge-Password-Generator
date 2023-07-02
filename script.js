@@ -75,6 +75,9 @@ if (includeLowercase) {
     // randomChar =+ password; // this is where the random characters are added to the password variable. //THIS IS SAYING randomChar = randomChar + password!!!! It assigns 0 to randomChar and then adds password to randomChar. This is not what I want. I want to add randomChar to password. The operator is also typed wrong as well. It should be += not =+.
   }
 
+  // console.log (password) // just testing to see if the password is being generated.
+
+
   return password; // now the password is being returned to the writePassword function
 }
 
@@ -116,8 +119,3 @@ generateBtn.addEventListener("click", writePassword); // needed to make the "gen
 
 //the #generate is the id of the button in the html file. The querySelector is what is calling upon the button to work.
 
-
-
-console.log (generatePassword);
-console.log (writePassword);
-console.log (password)
