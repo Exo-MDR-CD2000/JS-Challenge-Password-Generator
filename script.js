@@ -75,6 +75,8 @@ if (includeLowercase) {
 }
 
 
+//TODO 7-1-2023: I just realized that I am not returning the generated password at all. The password is being made, but it is not being sent anywhere.
+
 
 //TODO: It seems as if the password is not being geneerated? put some console logs to check the issue. I am literraly almost done except that there is something not working with the code. The password is not being displayed in the text box. I need to check the console logs to see what is going on.
 
@@ -99,10 +101,8 @@ function writePassword() {
 // }
 
 // Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
+generateBtn.addEventListener("click", writePassword); // needed to make the "generate button" work. The generateBtn is the id of the button in the html file. The addEventListener is what makes the button work. It is calling upon the writePassword function to generate the password.
 
-
-//the addEventListener is what makes the button work. It is calling upon the writePassword function to generate the password.
 
 // lookup javascript prompts and alerts for the criteria
 
