@@ -10,6 +10,8 @@ MDN docs was used as reference for JS help.
 
 This awesome JS [Cheat Sheet](https://htmlcheatsheet.com/js/)
 
+And lastly, the JS mini challenge for guidance.
+
 ## Screenshot
 
 ![alt password gen site](./assets/password-gen-site-small.png)
