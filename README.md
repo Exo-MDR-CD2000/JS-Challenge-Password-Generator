@@ -8,7 +8,7 @@ The task was to complete some pre-written javascript code to make a fully functi
 
 MDN docs was used as reference for JS help.
 
-This awesome JS [Cheat Sheet](https://htmlcheatsheet.com/js/)
+This awesome JS [Cheat Sheet](https://htmlcheatsheet.com/js/).
 
 And lastly, the JS mini challenge for guidance.
 
