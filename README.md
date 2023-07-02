@@ -16,7 +16,7 @@ Click on "Generate Password" button. You will then be prompted on how many chara
 
 ## Deployment Link
 
-Deployed Page: [Github Deployed Page](TBD)
+Deployed Page: [Github Deployed Page](https://exo-mdr-cd2000.github.io/JS-Challenge-Password-Generator/)
 
 Github repo: [JS-Challenge-Password-Generator](https://github.com/Exo-MDR-CD2000/JS-Challenge-Password-Generator)
 
