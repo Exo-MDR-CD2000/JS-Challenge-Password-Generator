@@ -70,8 +70,9 @@ if (includeLowercase) {
   for (var i = 0; i < passwordLength; i++) { // the i < passwordLength is saying that the for loop will run as many times as the passwordLength variable. The passwordLength variable is the number of characters the user wants to use in their password. The for loop will run as many times as the user wants characters in their password.
     var randomIndex = Math.floor(Math.random() * charPool.length); // this is where the random characters are selected from the charPool variable. The Math.random() function will select a random number between 0 and 1. The Math.floor() function will round the random number down to the nearest whole number. The Math.random() function will select a random number between 0 and the length of the charPool variable.
     var randomChar = charPool[randomIndex]; // this is where the random characters are selected from the charPool var.
-    password = password + randomChar; // this is the long version more of the right way to  write this like in class. The shorthand of this is password += randomChar.
-    // randomChar =+ password; // this is where the random characters are added to the password variable. //THIS IS SAYING randomChar = randomChar + password!!!! It assigns 0 to randomChar and then adds password to randomChar. This is not what I want. I want to add randomChar to password.
+    password += randomChar;
+    //password = password + randomChar; // this is the long version more of the right way to  write this like in class. The shorthand of this is password += randomChar on ine 73.
+    // randomChar =+ password; // this is where the random characters are added to the password variable. //THIS IS SAYING randomChar = randomChar + password!!!! It assigns 0 to randomChar and then adds password to randomChar. This is not what I want. I want to add randomChar to password. The operator is also typed wrong as well. It should be += not =+.
   }
 
   return password; // now the password is being returned to the writePassword function
