@@ -8,11 +8,11 @@ The task was to complete some pre-written javascript code to make a fully functi
 
 ## Screenshot
 
-![alt password gen site]()
+![alt password gen site](./assets/password-gen-site-small.png)
 
 ## Usage
 
-TBD
+Click on "Generate Password" button. You will then be prompted on how many characters you want your password to be, then click OK. Several prompts will then ask you to include lowercase letters, upercase letters, numbers, and special characters. Click OK to your desired choices. The site will refuse to generate your password if no character sets are chosen, so please pick at least one. The randomly generated password will then be displayed inside the box field.
 
 ## Deployment Link
 
