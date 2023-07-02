@@ -72,6 +72,8 @@ if (includeLowercase) {
     var randomChar = charPool[randomIndex]; // this is where the random characters are selected from the charPool var.
     randomChar =+ password; // this is where the random characters are added to the password variable.
   }
+
+  return password; // now the password is being returned to the writePassword function
 }
 
 
