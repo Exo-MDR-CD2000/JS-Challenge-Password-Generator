@@ -121,32 +121,3 @@ generateBtn.addEventListener("click", writePassword); // needed to make the "gen
 console.log (generatePassword);
 console.log (writePassword);
 console.log (password)
-
-
-
-
-
-
-
-
-
-
-
-
-
-// //below is the original code just for clarity sake
-
-// // Assignment Code
-// var generateBtn = document.querySelector("#generate");
-
-// // Write password to the #password input
-// function writePassword() {
-//   var password = generatePassword();
-//   var passwordText = document.querySelector("#password");
-
-//   passwordText.value = password;
-
-// }
-
-// // Add event listener to generate button
-// generateBtn.addEventListener("click", writePassword);
