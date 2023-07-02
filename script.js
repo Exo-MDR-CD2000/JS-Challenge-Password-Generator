@@ -119,3 +119,4 @@ generateBtn.addEventListener("click", writePassword); // needed to make the "gen
 
 //the #generate is the id of the button in the html file. The querySelector is what is calling upon the button to work.
 
+
